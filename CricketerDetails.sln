@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34031.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricketerDetails", "CricketerDetails\CricketerDetails.csproj", "{9FDB0786-0702-40CF-AF10-CD9D31F9D143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDataAccessLayer", "DapperDataAccessLayer\DapperDataAccessLayer.csproj", "{F730AA44-EC52-4C60-A885-E06EC7A5E2E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FDB0786-0702-40CF-AF10-CD9D31F9D143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDB0786-0702-40CF-AF10-CD9D31F9D143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDB0786-0702-40CF-AF10-CD9D31F9D143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDB0786-0702-40CF-AF10-CD9D31F9D143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F730AA44-EC52-4C60-A885-E06EC7A5E2E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F730AA44-EC52-4C60-A885-E06EC7A5E2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F730AA44-EC52-4C60-A885-E06EC7A5E2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F730AA44-EC52-4C60-A885-E06EC7A5E2E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C26ADF5-A9E6-494F-A4D7-44882ED54F0F}
+	EndGlobalSection
+EndGlobal
