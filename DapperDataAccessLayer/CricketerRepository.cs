@@ -6,16 +6,14 @@ using System.Linq;
 
 namespace DapperDataAccessLayer
 {
-        public class CricketerRepos : ICricketer
+        public class CricketerRepository : ICricketerRepository
         {
-            
-            
-            public void InsertSP(Cricketer details)
+
+        string connectionString = "Data source=DESKTOP-BLBGEHJ\\SQLEXPRESS;initial catalog=batch7;user id=sa;password=Anaiyaan@123;";
+        public void InsertSP(Cricketer details)
             {
                 try
                 {
-                    var connectionString = "Data source=DESKTOP-BLBGEHJ\\SQLEXPRESS;initial catalog=batch7;user id=sa;password=Anaiyaan@123;";
-
                     var con = new SqlConnection(connectionString);
                     con.Open();
                     var insertQuery = $"exec InsertSP @CricketerName='{details.CricketerName}', @TotalODI={details.TotalODI}, @TotalScore={details.TotalScore}, @Fifties={details.Fifties},@Hundreds={details.Hundreds} ";
@@ -40,9 +38,7 @@ namespace DapperDataAccessLayer
             public List<Cricketer> ReadSP()
             {
             try
-            {
-                var connectionString = "Data source=DESKTOP-BLBGEHJ\\SQLEXPRESS;initial catalog=batch7;user id=sa;password=Anaiyaan@123;";
-
+            {                
                 var con = new SqlConnection(connectionString);
                 con.Open();
                 var selectQuery = $"exec ReadSP";
@@ -70,8 +66,6 @@ namespace DapperDataAccessLayer
             {
                 try
                 {
-                    var connectionString = "Data source=DESKTOP-BLBGEHJ\\SQLEXPRESS;initial catalog=batch7;user id=sa;password=Anaiyaan@123;";
-
                     var con = new SqlConnection(connectionString);
                     con.Open();
                     var deleteQuery = $"exec DeleteSP {CricketerId}";
@@ -94,8 +88,6 @@ namespace DapperDataAccessLayer
             {
                 try
                 {
-                    var connectionString = "Data source=DESKTOP-BLBGEHJ\\SQLEXPRESS;initial catalog=batch7;user id=sa;password=Anaiyaan@123;";
-
                     var con = new SqlConnection(connectionString);
                     con.Open();
                     var updateQuery = $"exec UpdateSP  {cricketerId},'{prd.CricketerName}',{prd.TotalODI},{prd.TotalScore},{prd.Fifties},{prd.Hundreds} ";

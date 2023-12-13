@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DapperDataAccessLayer
 {
-    public interface ICricketer
+    public interface ICricketerRepository
     {
         public void InsertSP(Cricketer details);
         public List<Cricketer> ReadSP();

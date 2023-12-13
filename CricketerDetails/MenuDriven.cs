@@ -14,12 +14,12 @@ namespace CricketerDetails
     {
 
         List<Cricketer> run = new List<Cricketer>();
-        private readonly ICricketer _obje = null;
+        private readonly ICricketerRepository _obje = null;
 
 
         public MenuDriven()
         {
-            _obje = new CricketerRepos();
+            _obje = new CricketerRepository();
         }
         public void menu()
         {
