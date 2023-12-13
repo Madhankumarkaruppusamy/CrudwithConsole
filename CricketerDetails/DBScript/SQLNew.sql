@@ -12,7 +12,7 @@ DROP table CricketerDetails
 
 
 --TO INSERT
-
+go
 Create PROCEDURE
 InsertSP(
 @CricketerName nvarchar(50), @TotalODI bigint,@TotalScore bigint ,@Fifties bigint,@Hundreds bigint)
@@ -29,7 +29,7 @@ select * from CricketerDetails
 
 
 --TO UPDATE
-
+go
 Create procedure UpdateSP(
 @CricketerId bigint ,@CricketerName nvarchar(50), @TotalODI bigint,@TotalScore bigint ,@Fifties bigint,@Hundreds bigint)
 as
@@ -42,7 +42,7 @@ exec UpdateSP 3,'dhoni',290,9876,30,21
 select * from CricketerDetails
 
 --TO READ
-
+go
 create procedure ReadSP
 as
 begin
@@ -51,7 +51,7 @@ end
 exec ReadSP
 
 --TO DELETE
-
+go
 create procedure DeleteSP(@CricketerId bigint)
 as
 begin
